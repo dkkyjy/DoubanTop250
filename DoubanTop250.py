@@ -30,7 +30,7 @@ def Download_poster(path, poster_url):
 
 
 URL = 'https://movie.douban.com/top250?&filter='
-for i in range(7, 10):
+for i in range(1, 10):
     session = requests_html.HTMLSession()
     params = {'start': str(25 * i)}
     soup = session.get(URL, params=params)
